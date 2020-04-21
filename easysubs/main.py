@@ -45,8 +45,9 @@ def getsubs(path_to_mov):
 
     index = moviename.rfind('.')
     file_name = moviename[0:index] + '.srt'
-    with open(file_name, 'w') as f:
-        f.write(subtitles)
+    print(subtitles)
+    with open(file_name, 'w+') as f:
+        f.write(str(subtitles))
     print ("Downloaded!")
 def tupletostring(ins):
     string=''
@@ -112,7 +113,7 @@ def selectfile():
     #this method presents the user with  gui to select the movie file
     Tk().withdraw() 
 
-    filename = askopenfilename(initialdir = "/home/keonssss/mtr",title = "Select movie file",filetypes = (
+    filename = askopenfilename(initialdir = "/",title = "Select movie file",filetypes = (
     ("all files","*.*"),
     ("ASF files", "*.ASF"),
     ("FLAC files", "*.FLAC"),
@@ -131,10 +132,14 @@ def selectfile():
     ("mp4 files","*.mp4"),
     ))
     selectfile.sfdir=filename
-    print('creating and moving movie to new directory at: '+setdir(1))
-    movemovie()
+    # print('creating and moving movie to new directory at: '+setdir(1))
+    # movemovie()
+    print('full path')
+    print(filename)
+    print('modified path')
+    print(getdir())
     print('searching and downloading subs...')
-    getsubs(setdir(2))
+    getsubs(filename)
     
 # other_os_open()
 # print(get_movie_name("/home/keonssss/python/Automation Projects/easymovie/a really long movie name.mp4"))
