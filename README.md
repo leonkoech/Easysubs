@@ -6,7 +6,7 @@
 
 ## This is still a work in progress. 
 
-### It works fine for python 2.x!!
+### It works fine on python 2.x!!
 
 But does not in python 3.8 for some reason the subtitle file only contains metadata of where the subtitle was downloaded from but no subtitles.
 It's either the api does not support python 3.x or I have a bug(which I don't think)
