@@ -18,4 +18,4 @@ Please read the [contribution](https://github.com/leonkoech/Easysubs/blob/master
 
 ## License
 
-This project is under the [mit]
+This project is under the [mit](https://github.com/leonkoech/Easysubs/blob/master/LICENSE)
