@@ -15,3 +15,7 @@ If it's the former I will migrate the project to python 2.7
 ## Contribution
 
 Please read the [contribution](https://github.com/leonkoech/Easysubs/blob/master/contributions.md)guide
+
+## License
+
+This project is under the [mit]
